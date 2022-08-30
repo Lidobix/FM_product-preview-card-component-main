@@ -1,10 +1,6 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/* *{
-    font-size:1em;
-
-} */
 
 body{
     background-color: hsl(30, 38%, 92%);
@@ -12,13 +8,11 @@ body{
     color:hsl(228, 12%, 48%);
 }
 
-
 #card{
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 27px 10px 20px 10px ; */
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -28,6 +22,10 @@ body{
 }
 #blocImage{
     background-image: url('./images/image-product-mobile.jpg');
+    width: 100%;
+    height:35vh;
+    background-size:cover;
+    background-position: center;
 }
 #category{
     letter-spacing: 5px;
@@ -42,7 +40,10 @@ h1{
 }
 
 #text{
-    padding:20px;
+    /* padding:7%; */
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 7%;
     letter-spacing: 1px;
 }
 
@@ -68,9 +69,7 @@ h1{
 
 #cart:hover {
     background-color:hsl(228, 12%, 48%);
-
 }
-
 
 #cart > img{
     height: 18px;
@@ -80,7 +79,6 @@ h1{
 #priceLabel{
     display: flex;
     align-items: center;
-    /* margin-bottom: 13px; */
 }
 
 #realPrice{
@@ -100,56 +98,37 @@ h1{
 #card{
     flex-direction: column;
     margin: 27px 10px 20px 10px ;
-}
-    .mobileImage{
-        display: block;
-        width:100%;
-    }
-    .desktopImage{
-        display: none;
     }
 }
 @media screen and (min-width: 1440px){
- /* *{
-    font-size: 1.0em;
- } */
+
 #card{
     position: absolute;
     flex-direction: row;
-    /* align-items: stretch; */
-    /* flex-basis: 50%; */
     height:60%;
     top: 20%;
     width: 40%;
     left: 30%;
-    /* right:33% ; */
 }
-.mobileImage{
-    display: none;
-}
-.desktopImage{
-    
-    /* display: block; */
-    /* width:50%; */
-    /* max-height: max-content; */
-    /* max-height:100%; */
-    /* object-fit: cover; */
-}
+
 #blocImage{
-    /* flex-basis: 50%; */
     background-image: url('./images/image-product-desktop.jpg');
-    background-size:cover;
-    background-position: center;
-    /* background-attachment: fixed; */
-    /* height: auto; */
-    width:50%;
+    flex-basis: 50%;
     height: 100%;
 }
 #description{
-    display: block;
-    width:50%;
-        /* flex-basis: 50%; */
-        /* padding:20px;
-        letter-spacing: 1px; */
+    flex-basis: 50%;
+    height: 100%;
+}
+#text{
+    height: 90%;
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-around;
     }
+#text >p{
+    line-height: 25px;
+    font-size: 14px;
+}
+
 }
