@@ -1,4 +1,5 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
@@ -11,6 +12,7 @@ body{
 #card{
     background-color: hsl(0, 0%, 100%);
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
@@ -40,10 +42,7 @@ h1{
 }
 
 #text{
-    /* padding:7%; */
-    margin-top: 7%;
-    margin-left: 7%;
-    margin-right: 7%;
+   margin:7%;
     letter-spacing: 1px;
 }
 
@@ -68,7 +67,7 @@ h1{
 }
 
 #cart:hover {
-    background-color:hsl(228, 12%, 48%);
+    background-color:hsl(156, 42.2%, 17.6%);
 }
 
 #cart > img{
@@ -85,7 +84,7 @@ h1{
     font-family: 'Fraunces', serif;
     color:hsl(158, 36%, 37%);
     font-size: 2em;
-    margin:0 0 0 0;
+    margin:0;
 }
 
 #formerPrice{
@@ -103,32 +102,40 @@ h1{
 @media screen and (min-width: 1440px){
 
 #card{
-    position: absolute;
+    /* position: relative; */
+    /* position: absolute; */
     flex-direction: row;
-    height:60%;
-    top: 20%;
-    width: 40%;
-    left: 30%;
-}
+    /* margin-top: 20vh; */
+    height:60vh;
+    top: 20vh;
+    width: 40vw;
+    left: 30vw;
+    }
 
 #blocImage{
     background-image: url('./images/image-product-desktop.jpg');
     flex-basis: 50%;
-    height: 100%;
-}
+    height: 60vh;
+    }
+
 #description{
     flex-basis: 50%;
     height: 100%;
-}
+    }
+
 #text{
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
     height: 90%;
     display: flex; 
     flex-direction: column;
     justify-content:space-around;
     }
+
 #text >p{
     line-height: 25px;
     font-size: 14px;
-}
+    }
 
 }
