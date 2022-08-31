@@ -79,12 +79,13 @@ h1{
 #priceLabel{
     display: flex;
     align-items: center;
+    margin-bottom: 1.5vh;
 }
 
 #realPrice{
     font-family: 'Fraunces', serif;
     color:hsl(158, 36%, 37%);
-    font-size: 2em;
+    font-size: 30px;
     margin:0;
 }
 
@@ -103,10 +104,7 @@ h1{
 @media screen and (min-width: 1440px){
 
 #card{
-    /* position: relative; */
-    /* position: absolute; */
     flex-direction: row;
-    /* margin-top: 20vh; */
     height:60vh;
     top: 20vh;
     width: 40vw;
@@ -123,6 +121,13 @@ h1{
     flex-basis: 50%;
     height: 100%;
     }
+span{
+    font-size: 12px;
+}
+h1{
+    font-size:30px;
+    line-height: 31px;
+}
 
 #text{
     margin-top: 10%;
@@ -139,4 +144,9 @@ h1{
     font-size: 14px;
     }
 
+#realPrice{    
+    font-size: 28px;
+    
+}
+ 
 }
